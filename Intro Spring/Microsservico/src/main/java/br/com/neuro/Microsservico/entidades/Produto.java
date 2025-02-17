@@ -1,12 +1,25 @@
 package br.com.neuro.Microsservico.entidades;
 
+import jakarta.persistence.*;
+
 import java.util.Objects;
 
+@Entity
+@Table(name = "produto_tb")
 public class Produto {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_produto")
     private Long id;
+
+    @Column(name = "nome_produto")
     private String nome;
+
+    @Column(name = "desc_produto")
     private String descricao;
+
+    @Column(name = "valor_produto")
     private Double valor;
 
     public Produto(Long id, String nome, String descricao, Double valor) {
