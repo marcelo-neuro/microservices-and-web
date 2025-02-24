@@ -1,0 +1,1 @@
+INSERT INTO tb_employee (name_employee, cpf_employee, email_employee, salary_employee, birth_date_employee) VALUES ('Felaype', '123', 'femeio@meio.com', 200.50, '2005-11-01');
